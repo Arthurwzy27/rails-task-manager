@@ -2,9 +2,9 @@
   <%= link_to 'Create a new task', new_path %>
 <ul>
   <% @tasks.each do |task| %>
-    <li> <%= task.title %> </li>
-    <%= link_to 'show', task_path(task) %>
-    <%= link_to "edit", edit_path(task) %>
-    <%= link_to "delete", delete_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+    <li class="list"> <%= task.title %> </li>
+      <%= link_to 'show', task_path(task) %>
+      <%= link_to "edit", edit_path(task) %>
+      <%= link_to "delete", delete_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
   <% end %>
 </ul>
